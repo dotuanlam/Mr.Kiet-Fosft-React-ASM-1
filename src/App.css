@@ -1,105 +1,242 @@
 .App {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 5vh;
-  color: gray;
+  background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  position: relative;
 }
-.App .header {
-  display: flex;
-  align-items: center;
-  background-color: azure;
-  color: gray;
-  border-radius: 25px;
-}
-.App .header .avatar {
-  margin-right: 3vh;
-}
-.App .header .avatar img {
-  width: 37vh;
-  border-radius: 50%;
-  height: 30vh;
-}
-/******************/
-.App .container-infor {
-  background-color: azure;
-  height: 50vh;
-  width: 38%;
-  margin-top: 17vh;
-  border-radius: 25px;
-  display: flex;
-  align-items: flex-end;
-}
-.App .container-infor ul {
-  list-style-type: none;
-  line-height: 8vh;
-}
-.App .container-infor i {
-  margin-right: 4vh;
-}
-.App .container {
-  display: flex;
-  justify-content: space-between;
-}
-.App .container-infor h3 {
+.container {
+  height: 97%;
+  width: 50%;
+  background-color: white;
   position: absolute;
-  width: 66vh;
-  top: 40vh;
-  justify-content: center;
-  left: 23vh;
-  background-color: turquoise;
-  height: 16vh;
+  top: 0.5rem;
   border-radius: 25px;
-  display: flex;
-  align-items: center;
+  left: 25%;
 }
-.App .container-experience {
-  height: 156vh;
-  margin-top: 5vh;
-  width: 93vh;
-  background-color: azure;
+.bgr-component {
+  background-color: #c6ffdd;
+  opacity: 0.4;
   border-radius: 25px;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
 }
-.App .container-experience h3 {
-  top: 40vh;
-  width: 103vh;
-  background-color: turquoise;
-  height: 16vh;
+.wrap {
+  width: 100%;
+  height: 20%;
   border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 0.5rem;
+  position: relative;
 }
-/****************************/
-.App .graduation {
-  background-color: azure;
-    height: 38vh;
-    width: 63vh;
-    position: absolute;
+/************************tablet*************************************/
+@media screen and (max-width: 820px){
+  .App{
+    height: 80vh
+  }
+
+  .header {
+    font-size: 25px;
     display: flex;
-    top: 116vh;
-    align-items: flex-end;
-    border-radius: 25px;
-    text-align: center;
-    align-content: flex-end;
+  }
+  .header .avatar{
+    padding-right: 0.8rem;
+  }
+  .header .avatar img {
+    width: 5.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+  }
+  /*********************************/
+  .experience {
+    font-size: 0.7rem;
+    width: 60%;
+    position: absolute;
+    top: 6rem;
+    overflow: hidden;
+    padding-top: 0.5rem;
+  }
+  .experience h5{
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .experience ion-icon{
+    padding-right: 0.2rem;
+  }
+  /*************************/
+  .skill{
+    position: absolute;
+    right: 0;
+    width: 38%;
+    top: 6rem;
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+  }
+  .skill h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .skill h5 ion-icon{
+    padding-right: 0.5rem;
+  }
+   /**************************/
+   .graduation{
+    position: absolute;
+    width: 38%;
+    right: 0;
+    top: 15rem;
+    font-size: 0.7rem;
+    overflow: hidden;
+    padding-top: 0.5rem;
+  }
+  .graduation h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .graduation h5  ion-icon{
+    padding-right:  0.5rem;
+  }
 }
-.App .graduation h4{
-  position: absolute;
-  top: -5vh;
-  left: -2vh;
-  height: 16vh;
-  background-color: turquoise;
-  width: 66vh;
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/************************destop*************************************/
+@media screen and (min-width: 820px) {
+  .App{
+    height: 83vh;
+  }
+
+  .header {
+    font-size: 25px;
+    display: flex;
+  }
+  .header .avatar  {
+    padding-right: 1rem;
+  }
+  .header .avatar img {
+    width: 5.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+  }
+  /*******************************/
+  .experience {
+    font-size: 0.7rem;
+    width: 60%;
+    position: absolute;
+    top: 6rem;
+    overflow: hidden;
+    padding-top: 0.5rem;
+  }
+  .experience h5 {
+    display: flex;
+    align-items: center;
+  }
+  .experience ion-icon{
+    padding-right: 0.2rem;
+  }
+  /************************/
+  .skill{
+    position: absolute;
+    right: 0;
+    width: 38%;
+    top: 6rem;
+    font-size: 0.7rem;
+  }
+  .skill h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .skill h5 ion-icon{
+    padding-right: 0.5rem;
+  }
+  /**************************/
+  .graduation{
+    position: absolute;
+    width: 38%;
+    right: 0;
+    top: 15rem;
+    font-size: 0.7rem;
+    overflow: hidden;
+    padding-top: 0.5rem;
+  }
+  .graduation h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .graduation h5  ion-icon{
+    padding-right:  0.5rem;
+  }
 }
-.App .skill{
- 
-    top: 168vh;
+/**************************************************************/
+@media screen and (min-width: 539px) and (max-width: 720px) {
+  .header h3{
+    font-size: calc(1.8rem + -1.9vw) ;
+  }
+  .header h4{
+    font-size: calc(1.7rem + -2.7vw);
+  }
+  .header .name-position{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    width: 10rem;
+    
+  }
 }
 
+/************************ mobile*************************************/
+@media screen and (max-width: 420px){
+  .App{
+    height:154vh;
+  }
 
+
+  .header {
+    font-size: 25px;
+   display: flex;
+    } 
+  .header h3{
+    font-size: calc(1.3rem + -1.9vw) ;
+  }
+  .header h4{
+    font-size: calc(1.30rem + -2.7vw);
+  }
+  .header .avatar img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+  }
+  .header .name-position{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+  }
+  /**************************/
+  .experience{
+    width: 100%;
+    padding-top: 0.5rem;
+    position: absolute;
+    top: 5rem;
+  }
+  .experience h5{
+    display: flex;
+    align-items: center;
+  }
+  /******************************/
+  .skill{
+    position: absolute;
+    width: 100%;
+    top:30rem;
+  }
+  /**************************/
+  .graduation{
+    position: absolute;
+    top: 39.3rem;;
+    width: 100%;
+  }
+}
